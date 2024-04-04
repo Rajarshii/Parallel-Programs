@@ -11,3 +11,5 @@ Three results have been shown: without optimization, with level-3 optimization, 
 Notice the drastic change from no optimization to level-3 optimization. At O3, the compiler aggressively unrolls the loops. The outcome is seen in the serial implementations and the parallel(first iterate parallelized) cache access optimized run. 
 
 The other parallel runs, however, do not benefit much from optimization. 
+
+Command: g++ matrix_multiply.cpp -o matrix_multiply -fopenmp -O3
